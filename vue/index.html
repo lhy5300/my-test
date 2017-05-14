@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  	<meta name="Keywords" content="Web前端博客,html5,Web前端笔记,Javascript,jQuery,css3,html,css,形影不离的博客">
+  	<meta name="Description" content="形影不离博客,个人前端与案例展示,一起学习进步">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<title>VUE</title>
+    <script type="text/javascript" src="js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app-2">
+      <span v-bind:title="message">
+        鼠标悬停几秒钟查看此处动态绑定的提示信息！
+      </span>
+    </div>
+    <script>
+      var app2 = new Vue({
+        el: '#app-2',
+        data: {
+          message: '页面加载于 ' + new Date()
+        }
+      });
+    </script>
+  </body>
+</html>
